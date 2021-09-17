@@ -7,7 +7,7 @@ function App() {
 
   const decrement = (e) => {
     if (state === 0) {
-      
+      alert("Cannot less than 0")
     }
     else {
       dispatch( {type : "DECREMENT"})
@@ -25,7 +25,13 @@ function App() {
                {state}
               </div>
               <button className="count-btns" id="btn-increment"
-              onClick = {() => {dispatch( {type : "INCREMENT"} )}}
+                onClick={
+                  () => {
+                    dispatch({
+                      type: "INCREMENT"
+                    }
+                    )
+                  }}
               >
                 Increment
               </button>
