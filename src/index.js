@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 
 const initialState = {
-  counter : 5
+  counter : 0
 }
 
 function rootReducer(state = initialState, action) {
